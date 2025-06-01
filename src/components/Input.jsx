@@ -1,13 +1,12 @@
-import React from 'react';
 
-const Input = ({ placeholder, onChange }) => {
+import './Input.css';
+
+export default function Input({ placeholder, onChange }) {
   return (
     <input
-      type="text"
+      className="custom-input"
       placeholder={placeholder}
       onChange={onChange}
     />
   );
-};
-
-export default Input;
+}
